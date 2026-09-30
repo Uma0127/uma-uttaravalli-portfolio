@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uttaravalli Uma | Resume</title>
+    <meta
+      name="description"
+      content="Resume of Uttaravalli Uma, Computer Science & Engineering undergraduate."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --section: #f8fafc;
+        --text: #111827;
+        --muted: #4b5563;
+        --border: #e5e7eb;
+        --primary: #2563eb;
+        --primary-hover: #1d4ed8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      a { text-decoration: none; }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(8px);
+        z-index: 10;
+      }
+
+      .nav-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 72px;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .brand {
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        color: var(--text);
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.8rem 1.3rem;
+        border-radius: 999px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .btn-primary:hover { background: var(--primary-hover); }
+
+      .btn-outline {
+        border: 1px solid var(--border);
+        color: var(--text);
+        background: #fff;
+      }
+
+      .resume-page {
+        padding: 42px 0 72px;
+      }
+
+      .resume-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 12px 30px rgba(17, 24, 39, 0.05);
+        padding: 36px;
+      }
+
+      .hero-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 22px;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin-top: 8px;
+      }
+
+      .contact-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        justify-content: flex-end;
+        color: var(--muted);
+      }
+
+      .contact-list a {
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+
+      .section h2 {
+        margin: 0 0 14px;
+        font-size: 1.05rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+
+      .section-box {
+        background: var(--section);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 18px 18px 12px;
+      }
+
+      .edu-item, .exp-item, .skill-item, .cert-item, .ach-item {
+        margin-bottom: 16px;
+      }
+
+      .edu-item:last-child,
+      .exp-item:last-child,
+      .skill-item:last-child,
+      .cert-item:last-child,
+      .ach-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .title {
+        font-size: 1.12rem;
+        font-weight: 700;
+        margin: 0 0 4px;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 0.94rem;
+        margin: 0 0 8px;
+      }
+
+      .note {
+        margin: 0;
+        color: var(--text);
+      }
+
+      .badge-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.48rem 0.72rem;
+        border-radius: 999px;
+        background: rgba(37, 99, 235, 0.06);
+        color: var(--primary);
+        border: 1px solid rgba(37, 99, 235, 0.12);
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .grid { grid-template-columns: 1fr; }
+        .resume-card { padding: 22px 18px; }
+        .contact-list { justify-content: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-row">
+        <div class="brand">UTTARAVALLI UMA</div>
+        <div class="actions">
+          <a href="index.html" class="btn btn-outline">Back to Portfolio</a>
+          <a href="assets/uma-resume.txt" class="btn btn-primary" download>Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="resume-page">
+      <div class="container">
+        <div class="resume-card">
+          <div class="hero-header">
+            <div>
+              <h1>Uttaravalli Uma</h1>
+              <div class="subtitle">Computer Science &amp; Engineering Undergraduate</div>
+            </div>
+            <div class="contact-list">
+              <span>Parvathi Puram Manyam District, Andhra Pradesh</span>
+              <a href="tel:+919346651773">9346651773</a>
+              <a href="mailto:umauttaravalli841@gmail.com">umauttaravalli841@gmail.com</a>
+              <a href="https://www.linkedin.com/in/uma-uttaravalli-a656ab38a" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/Uma0127" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div>
+              <section class="section">
+                <h2>Career Objective</h2>
+                <div class="section-box">
+                  <p class="note">
+                    To start my career in a growth-oriented organization where I can apply my technical
+                    skills, learn new technologies, and contribute to the success of the organization while
+                    building a strong career.
+                  </p>
+                </div>
+              </section>
+
+              <section class="section">
+                <h2>Education</h2>
+                <div class="section-box">
+                  <div class="edu-item">
+                    <p class="title">B.Tech</p>
+                    <p class="meta">Bapatla Women's Engineering College | 2023–2027 | Score: 8.1</p>
+                  </div>
+                  <div class="edu-item">
+                    <p class="title">Intermediate</p>
+                    <p class="meta">Government Junior College | 2021–2023 | Score: 8.5</p>
+                  </div>
+                  <div class="edu-item">
+                    <p class="title">SSC</p>
+                    <p class="meta">ZPH School | 2020–2021 | Score: 8.2</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section">
+                <h2>Experience</h2>
+                <div class="section-box">
+                  <div class="exp-item">
+                    <p class="title">Internshala Trainings</p>
+                    <p class="meta">Generative AI | 9 May 2025 – 20 June 2025</p>
+                    <p class="note">Learned Generative AI concepts and their practical applications.</p>
+                  </div>
+                  <div class="exp-item">
+                    <p class="title">Glow Logics</p>
+                    <p class="meta">Web Development | Ongoing</p>
+                    <p class="note">
+                      Web Development internship focused on learning and developing websites using HTML,
+                      CSS, and basic web technologies.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div>
+              <section class="section">
+                <h2>Skills</h2>
+                <div class="section-box">
+                  <div class="skill-item">
+                    <p class="title">Programming Languages</p>
+                    <div class="badge-wrap">
+                      <span class="badge">Python</span>
+                      <span class="badge">C</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="title">Web Technologies</p>
+                    <div class="badge-wrap">
+                      <span class="badge">HTML</span>
+                      <span class="badge">CSS</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="title">Database</p>
+                    <div class="badge-wrap">
+                      <span class="badge">MySQL</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="title">Soft Skills</p>
+                    <div class="badge-wrap">
+                      <span class="badge">Leadership</span>
+                      <span class="badge">Problem Solving</span>
+                      <span class="badge">Teamwork</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section">
+                <h2>Certifications</h2>
+                <div class="section-box">
+                  <div class="cert-item">
+                    <p class="title">NPTEL – Internet of Things</p>
+                  </div>
+                  <div class="cert-item">
+                    <p class="title">Coursera – Communication Networks</p>
+                  </div>
+                  <div class="cert-item">
+                    <p class="title">5 Days Workshop on Generative AI</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section">
+                <h2>Achievements</h2>
+                <div class="section-box">
+                  <div class="ach-item">
+                    <p class="title">NCC B Certificate</p>
+                    <p class="meta">Junior Under Officer in NCC</p>
+                  </div>
+                  <div class="ach-item">
+                    <p class="title">AP Trekking Camp 3</p>
+                    <p class="meta">Guntur</p>
+                  </div>
+                  <div class="ach-item">
+                    <p class="title">Adventure Mountaineering Camp</p>
+                    <p class="meta">Manali</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
