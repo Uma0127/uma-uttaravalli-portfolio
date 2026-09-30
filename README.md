@@ -1,69 +1,133 @@
-# Uttaravalli Uma Portfolio
+# Uttaravalli Uma – Personal Portfolio
 
-A responsive single-page portfolio website for Uttaravalli Uma, built with HTML5, CSS3, and Bootstrap 5.
+A clean, responsive, and professional personal portfolio website developed for **Uttaravalli Uma**, a Computer Science and Engineering undergraduate.
 
-## Project Overview
+The portfolio showcases her academic background, technical skills, internship experience, project, certifications, achievements, and contact information.
 
-This portfolio includes:
-- Hero section with profile image
-- About/Career Objective section
-- Skills cards
-- Education table
-- Internship experience timeline
-- Project showcase card
-- Certifications section
-- Achievements section
-- Contact section with clickable email, phone, LinkedIn, and GitHub links
-- Resume page and resume download option
+## 🌐 Live Website
 
-## Files
+[View Live Portfolio](https://uma-portfolio123.netlify.app/)
 
-- `index.html` – main portfolio page
-- `resume.html` – resume view page
-- `style.css` – styling and responsive layout
-- `script.js` – mobile menu and footer year behavior
-- `assets/` – local images and favicon
+## 👩‍💻 About
 
-## Local Preview
+Uttaravalli Uma is a Computer Science and Engineering undergraduate interested in applying technical skills, learning new technologies, and contributing to a growth-oriented organization.
 
-Open `index.html` directly in a browser, or run:
+The portfolio presents her academic journey, technical knowledge, internship experience, project work, certifications, and achievements.
 
-```bash
-python -m http.server 8000
-```
+## ✨ Features
 
-Then visit:
+- Responsive single-page portfolio
+- Clean white professional theme
+- Responsive Bootstrap 5 navigation
+- Hero section
+- Career Objective / About section
+- Technical Skills section
+- Responsive Education table
+- Internship Experience
+- Project Showcase
+- Certifications
+- Achievements
+- Contact section
+- LinkedIn and GitHub links
+- Responsive design for desktop, tablet, and mobile
+- Professional card hover effects
+- Accessible and readable interface
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+## 🎓 Education
+
+### B.Tech – Computer Science and Engineering
+**Bapatla Women's Engineering College**  
+2023 – 2027  
+Score: 8.1
+
+### Intermediate
+**Government Junior College**  
+2021 – 2023  
+Score: 8.5
+
+### SSC
+**ZPH School**  
+2020 – 2021  
+Score: 8.2
+
+## 💻 Skills
+
+### Programming Languages
+- Python
+- C
+
+### Web Technologies
+- HTML
+- CSS
+
+### Database
+- MySQL
+
+### Soft Skills
+- Leadership
+- Problem Solving
+- Teamwork
+
+## 💼 Internship Experience
+
+### Generative AI – Internshala Trainings
+**9 May 2025 – 20 June 2025**
+
+- Learned Generative AI concepts and their practical applications.
+
+### Web Development – Glow Logics
+**Ongoing**
+
+- Web Development internship focused on learning and developing websites using HTML, CSS, and basic web technologies.
+
+## 🚀 Project
+
+### Mini Novel Recommendation System
+
+A Python-based recommendation system that suggests novels based on users' interests and preferences.
+
+**Technology:**
+- Python
+
+## 📜 Certifications
+
+- NPTEL – Internet of Things
+- Coursera – Communication Networks
+- 5 Days Workshop on Generative AI
+
+## 🏆 Achievements
+
+- NCC B Certificate with the rank of Junior Under Officer in NCC
+- Participated in AP Trekking Camp 3 – Guntur
+- Participated in Adventure Mountaineering Camp – Manali
+
+## 📫 Contact
+
+**Email:** [umauttaravalli841@gmail.com](mailto:umauttaravalli841@gmail.com)
+
+**Phone:** [+91 9346651773](tel:+919346651773)
+
+**LinkedIn:** [Uttaravalli Uma](https://www.linkedin.com/in/uma-uttaravalli-a656ab38a)
+
+**GitHub:** [Uma0127](https://github.com/Uma0127)
+
+## 📁 Project Structure
 
 ```text
-http://localhost:8000
-```
-
-## GitHub Upload
-
-```bash
-git init
-git add .
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repository>.git
-git push -u origin main
-```
-
-## Netlify Deployment
-
-1. Push the project to GitHub.
-2. Go to Netlify.
-3. Click "Add new project" > "Import an existing project".
-4. Select the GitHub repository.
-5. Use these settings:
-   - Build command: leave empty or do not set one
-   - Publish directory: `.`
-6. Deploy the site.
-
-Since this is a static site, no build command is required.
-
-## Notes
-
-- This site is directly deployable to Netlify.
-- No backend, database, Node.js, or package installation is needed.
-- All content is based only on the provided Uma resume information.
+uma-uttaravalli-portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── images/
+│   └── ...
+│
+└── README.md
